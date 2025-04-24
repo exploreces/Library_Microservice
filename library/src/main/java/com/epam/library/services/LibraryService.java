@@ -73,6 +73,7 @@ public class LibraryService {
     }
 
     public void releaseBook(String username, Long id) {
+
         libraryRepository.deleteByBookIdAndUsername(id, username);
     }
 }
